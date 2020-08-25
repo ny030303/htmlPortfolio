@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="kor">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  
+    .slide-view-area {
+      margin-top: 30px;
+      display: inline-block;
+      position: relative;
+      width: 600px;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .slide-block {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 1800px;
+      height: 300px;
+      z-index: -1;
+      transition: 0.6s;
+    }
+
+    .inner-block {
+      position: relative;
+      padding-top: 60px;
+      text-align: center;
+      color: white;
+      font-size: 30px;
+      width: 600px;
+      height: 300px;
+      float: left;
+    }
+    .inner-block:nth-child(1) { background: red; }
+    .inner-block:nth-child(2) { background: green; }
+    .inner-block:nth-child(3) { background: blue; }
+
+    .indicator-ball {
+      position: absolute;
+      bottom: 30px;
+      width: 30px;
+      height: 30px;
+      margin-left: -15px;
+      cursor: pointer;
+      /*transition: opacity 1s ease-in-out;*/
+    }
+    .indicator-ball:nth-child(1) { left: 40%; }
+    .indicator-ball:nth-child(2) { left: 50%; }
+    .indicator-ball:nth-child(3) { left: 60%; }
+
+    @keyframes radio-opacity-ani {
+      0% {opacity: 1.0;}
+      50% {opacity: 0.1;}
+      100% {opacity: 1.0;}
+    }
+
+    input[type="radio"]:not(:checked) { animation-name: radio-opacity-ani; animation-duration: 0.6s; }
+
+    input[type="radio"]:nth-child(1):checked ~ div { left:     0px; }
+    input[type="radio"]:nth-child(2):checked ~ div { left:  -600px; }
+    input[type="radio"]:nth-child(3):checked ~ div { left: -1200px; }
+  </style>
+</head>
+<body>
+<div style="width:100%; text-align: center">
+  <div class="slide-view-area">
+    <input type="radio" name="indicator" class="indicator-ball" checked/>
+    <input type="radio" name="indicator" class="indicator-ball"/>
+    <input type="radio" name="indicator" class="indicator-ball"/>
+    <div class="slide-block">
+      <div class="inner-block">빨간색</div>
+      <div class="inner-block">초록색</div>
+      <div class="inner-block">파랑색</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

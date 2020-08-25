@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>겨울왕국2</title>
+	<style>
+		* {
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+
+		#container {
+			width:1200px;
+			margin:0 auto; 
+			/* 첫번째는 세로, 두번째는 가로 */
+		}
+
+		#header {
+			background-image: url(header.jpg);
+			background-size: cover;
+			background-position: 0 -50px;
+			height: 350px;
+			width:100%;
+			padding-top:50px;
+			position: relative;
+		}
+
+		#logo {
+			color:#fff;
+			text-align: center;
+			font-size:50px;
+			text-shadow: 0 0 5px rgba(0,0,0,0.8);
+		}
+		.btn {
+			text-decoration: none;
+			color:#fff;
+			border:1px solid #fff;
+			padding:8px 12px;
+			border-radius: 4px;
+			transition:all 0.5s;
+		}
+
+		.btn:hover {
+			/*마우스를 올렸을 때 스타일 지정*/
+			background-color: #39a2e5;
+		}
+
+		#header > .btn {
+			/* position: absolute; */
+			/* right:10px;
+			bottom:10px; */
+		}
+
+        #btn-wrap {
+            position: absolute;
+			right:10px;
+			bottom:10px;
+        }
+	</style>
+</head>
+<body>
+	<div id="container">
+
+		<div id="header">
+            <h1 id="logo">겨울왕국2</h1>
+            <div id="btn-wrap">
+                <a class="btn" href="http://www.cgv.co.kr/">홈페이지</a>
+                <a href="#" class="btn">다른버튼</a>
+            </div>
+		</div>
+
+	</div>
+</body>
+</html>

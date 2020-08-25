@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.main {
+			width: 700px;
+			height: 200px;
+			border: 1px solid black;
+			border-radius: 5px;
+			padding: 10px;
+			background-color: #0E6655;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+
+		input[type=checkbox]:checked + div.img {
+			height: 0px;
+		}
+
+
+		div .C1 {
+			text-align: left;
+			transition-duration: 1s;
+		}
+
+		div .C2 {
+			text-align: left;
+			transition-duration: 1s;
+		}
+
+		div .C3 {
+			text-align: left;
+			transition-duration: 1s;
+		}
+
+		.page .C1 {
+			margin: 1px;
+        	width: 200px;
+        	height: 220px;
+        	/*transition-duration: 1s;*/
+        	float: left;
+		}
+
+		.page2 .C2 {
+			margin: 1px;
+        	width: 200px;
+        	height: 220px;
+        	/*transition-duration: 1s;*/
+        	float: left;
+		}
+
+		.page3 .C3 {
+			margin: 1px;
+        	width: 200px;
+        	height: 220px;
+        	/*transition-duration: 1s;*/
+        	float: left;
+		}
+
+		img {
+			overflow: hidden; width:200px; height: 200px; 
+			transition-duration: 1s; float: left;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="page">
+		<div class="C1">
+			<input type="checkbox" name="box1" />1번 그림 감추기
+			<img src="./YJA1.jpg">
+		</div>
+	</div>
+	<div class="page2">
+		<div class="C2">
+			<input type="checkbox" name="box2"/>2번 그림 감추기
+			<img src="./YJA2.jpg">
+		</div>
+		<div class="page3">
+		<div class="C3">
+			<input type="checkbox" name="box3"/>3번 그림 감추기
+			<img src="./YJA3.jpg">
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
