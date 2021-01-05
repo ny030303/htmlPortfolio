@@ -1,0 +1,190 @@
+.footer {
+    position: relative;
+    background: #131315;
+}
+
+footer {
+    display: block;
+}
+
+.familysite {
+    text-align: center;
+    border-bottom: 1px solid #212123;
+}
+
+.footer__container {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.familysite__list {
+    display: inline-block;
+}
+
+.familysite__hotel {
+    float: left;
+    width: 220px;
+    height: 130px;
+    border-right: 1px solid #212123;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #131315;
+    box-sizing: border-box;
+    transition: background-image .4s;
+    transition-delay: 0s;
+}
+
+
+.familysite__hotel--dragoncity {
+    width: 360px;
+    border-left: 1px solid #212123;
+    background-image: url("/images/logo_seoul_dragon_city.png");
+}
+
+.familysite__hotel--mercure {
+    background-image: url("/images/logo_grand_mercure.png");
+}
+
+.familysite__hotel--suites {
+    background-image: url("/images/logo_novotel_suites.png");
+}
+
+.familysite__hotel--novotel {
+    background-image: url("/images/logo_novotel.png");
+}
+
+.familysite__hotel--ibis {
+    background-image: url("/images/logo_ibis.png");
+
+}
+
+.familysite__list:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.footer-sns {
+    float: right;
+    overflow: hidden;
+    position: relative;
+    width: 720px;
+    max-height: 170px;
+    margin-right: -170px;
+}
+
+.organization {
+    float: left;
+}
+
+.footer-sns__description {
+    display: block;
+    padding-bottom: 60px;
+    color: #bb9f92;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.footer-sns__dl {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    max-width: 360px;
+    min-height: 90px;
+    padding-left: 50px;
+}
+
+.footer-sns__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left 0;
+}
+
+.footer-sns__title:before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 1px;
+    height: calc(100% - 35px);
+    background-color: #494848;
+    content: "";
+}
+
+.footer-sns__text {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0,0,0,0);
+    clip-path: inset(50%);
+}
+
+.footer-sns__title--instagram {
+    background-image: url("/images/icon_sns_instagram.png");
+}
+
+.footer-sns__data {
+    float: left;
+    min-width: 180px;
+}
+
+.footer-sns:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.footer-sns__title--facebook {
+    background-image: url("/images/icon_sns_facebook.png");
+}
+
+.footer-sns__link {
+    display: inline-block;
+    margin-bottom: 13px;
+    color: #5f5f60;
+}
+
+.organization__list {
+    margin: 0 -20px;
+}
+
+.organization__item {
+    float: left;
+}
+
+.organization__link {
+    display: block;
+    position: relative;
+    margin: 0 15px;
+    padding: 0 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.organization__link:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 1px;
+    height: 100%;
+    background: #494848;
+    content: "";
+}
+
+.organization__info {
+    padding-top: 40px;
+    color: #3d3d3d;
+    font-size: 14px;
+    line-height: 28px;
+}

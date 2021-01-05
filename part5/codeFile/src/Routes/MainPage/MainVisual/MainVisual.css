@@ -1,0 +1,152 @@
+.main-visual .swiper-pagination-bullets {
+    bottom: 0;
+    width: 100%
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: opacity .3s;
+    transform: translateZ(0);
+    z-index: 10;
+}
+
+/*main-visual*/
+.main-visual {
+    overflow: hidden;
+    position: relative;
+}
+
+.main-visual__name {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -130px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-visual__item {
+
+}
+
+
+.main-visual__contents {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -160px;
+    text-align: center;
+    z-index: 10
+}
+
+.main-visual__info {
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .1em
+}
+
+.main-visual__info:after {
+    display: block;
+    clear: both;
+    content: ""
+}
+
+.main-visual__info-item:before {
+    padding: 0 5px;
+    content: "-";
+}
+
+
+/*프로세스 바*/
+
+.main-visual .progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    margin-left: -500px;
+    height: 1px;
+    text-align: left;
+    background-color: hsla(0,0%,100%,.2);
+    z-index: 10;
+}
+
+.main-visual .progress-bar__bar {
+    display: inline-block;
+    vertical-align: top;
+    height: 1px;
+    background-color: #fff;
+}
+
+/*하단 5개 바*/
+
+
+.main-visual .swiper-pagination-bullets .swiper-pagination-bullet {
+    opacity: 1;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    width: 20%;
+    height: 100px;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    background-color: rgba(41,40,49,.9);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    transition: height .5s ease-in-out;
+    cursor: pointer;
+}
+
+.main-visual  .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    height: 160px;
+    background: #292831;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+
+.main-visual .swiper-pagination-bullets .swiper-pagination-bullet-active:before {
+    display: none
+}
+
+.main-visual .swiper-pagination-bullets .swiper-pagination-bullet:before {
+    position: absolute;
+    right: -1px;
+    bottom: 0;
+    width: 1px;
+    height: 100px;
+    background: #ddd;
+    content: "";
+}
+
+.main-visual .swiper-pagination-bullet-text {
+    display: none;
+}
+
+.swiper-pagination-bullet--sdc {
+
+}
+
+.swiper-pagination-bullet--grand {
+    background-size: auto 45px !important;
+}
+
+.swiper-pagination-bullet--suites {
+    background-size: auto 35px !important;
+}
+
+.swiper-pagination-bullet--novotel {
+    background-size: auto 28px !important;
+}
+
+.swiper-pagination-bullet--ibis {
+    background-size: auto 35px !important;
+}
+

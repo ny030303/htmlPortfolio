@@ -1,0 +1,255 @@
+.main-special {
+    position: relative;
+    padding: 80px 0 240px;
+    text-align: center;
+    background: #eff1f5;
+}
+
+.main-special__title {
+    padding-bottom: 70px;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: .12em;
+}
+
+.main-special__title--sub {
+    opacity: .4;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: .04em;
+}
+
+.promotion-banner {
+    position: relative;
+    height: 700px;
+    padding-top: 110px;
+    box-sizing: border-box;
+}
+
+
+/*navigation*/
+
+
+
+
+.main-special__control--next,
+.main-special__control--prev {
+    top: 438px;
+    left: 50%;
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.main-special__control--prev {
+    /*margin-left: -380px;*/
+    background: #af6e52;
+}
+.main-special__control--next {
+    margin-left: 250px;
+    background: #242a46;
+}
+
+.main-special__navigation {
+    display: block;
+}
+.main-special__control--prev:after,
+.main-special__control--prev:before {
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background: #fff;
+    transition: left .2s ease-in;
+    content: "";
+}
+
+.main-special__control--prev:after {
+    left: 38px;
+    width: 24px;
+    margin-top: 1px;
+    margin-right: -1px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.main-special__control--prev:before {
+    left: 40px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.main-special__control--next:after,
+.main-special__control--next:before {
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background: #fff;
+    transition: right .2s ease-in;
+    content: "";
+}
+
+.main-special__control--next:before {
+    right: 40px;
+    width: 50px;
+    margin-top: 10px;
+}
+.main-special__control--next:after {
+    right: 39px;
+    width: 24px;
+    margin-top: 1px;
+    margin-right: -1px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.main-special__control--text {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+.main-special__control:hover.main-special__control--prev {
+    background: #c7886b;
+}
+
+.main-special__control:hover.main-special__control--prev:before {
+    left: 34px;
+}
+
+.main-special__control:hover.main-special__control--prev:after {
+    left: 32px;
+}
+
+.main-special__control:hover.main-special__control--next {
+    background: #3b405b;
+}
+
+.main-special__control:hover.main-special__control--next:before {
+    right: 34px;
+}
+
+.main-special__control:hover.main-special__control--next:after {
+    right: 33px;
+}
+
+
+
+.main-special__item {
+    width: 440px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.main-special__link {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.main-special__type--room {
+    background: url("/images/icon_special_room_package.png");
+}
+
+.main-special__type {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.main-special__hotel {
+    /* opacity: 0; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 100% 30px 20px;
+    text-align: left;
+    background-image: linear-gradient(180deg,transparent 0,rgba(0,0,0,.1) 60%,rgba(0,0,0,.8));
+    box-sizing: border-box;
+}
+
+.main-special__name {
+    display: block;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .04em;
+}
+
+.main-special__name:before {
+    padding-right: 5px;
+    content: "-";
+}
+
+.main-special__item.swiper-slide-active .main-special__etc {
+    margin: 0 -30px;
+}
+
+.main-special__item.swiper-slide-active .main-special__summary {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.main-special__summary {
+    opacity: .4;
+    margin-top: 20px;
+    padding: 0 30px;
+    color: #111;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main-special__item.swiper-slide-active .main-special__text {
+    opacity: .4;
+    padding: 20px 0 0;
+}
+
+.main-special__text {
+    /* opacity: 0; */
+    overflow: hidden;
+    max-height: 48px;
+    padding: 20px 30px 0;
+    color: #111;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.main-special__date {
+    /* opacity: 0; */
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.main-special__image {
+    width: 100%;
+    /* -webkit-filter: grayscale(100%); */
+    /* filter: grayscale(100%); */
+}
+
+.main-special__item.swiper-slide-active {
+    padding: 0;
+}
+
+.main-spcial__list {
+    /* width: 85%;
+    margin: 0 auto; */
+}

@@ -1,0 +1,297 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: -90px;
+    right: 0;
+    padding-left: 90px;
+    min-width: 1380px;
+    z-index: 50;
+}
+
+.header__container {
+    position: relative;
+}
+
+.header__logo {
+    float: left;
+}
+
+.header__logo-link {
+    display: block;
+    width: 90px;
+    height: 80px;
+    background: url("/images/logo_sdc.png") no-repeat center 5px;
+}
+
+.header__logo-text {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0,0,0,0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+}
+
+/*-------header 메뉴-------*/
+
+.header-menu {
+    float: left;
+}
+
+.header-menu__item {
+    float: left;
+}
+
+.header-menu__main-link {
+    display: block;
+    height: 80px;
+    padding: 20px 18px 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.header-menu__main-text {
+    display: block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+}
+
+.header-menu__item:hover .header-menu__main-text:after {
+    left: 0;
+    width: 100%;
+}
+
+.header-menu__main-text:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width .2s ease,left .2s ease;
+    content: "";
+}
+
+
+/* -------서브 메뉴------- */
+.header-menu__item:hover .header-menu__sub {
+    opacity: 1;
+    height: auto;
+}
+
+.header-menu__sub {
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    /*top: 100%;*/
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(30,29,36,.9);
+}
+
+.header-menu__item--city .header-menu__sub-list {
+    padding-left: 94px;
+}
+
+.header-menu__item--hotel .header-menu__sub-list {
+    padding-left: 280px;
+}
+
+.header-menu__item--dining .header-menu__sub-list {
+    padding-left: 374px;
+}
+
+.header-menu__item--sky .header-menu__sub-list {
+    padding-left: 460px;
+}
+
+.header-menu__item--meeting .header-menu__sub-list {
+    padding-left: 448px;
+}
+
+.header-menu__item--membership .header-menu__sub-list {
+    padding-left: 640px;
+}
+
+.header-menu__sub-item {
+    float: left;
+    height: 62px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.header-menu__sub-link {
+    float: left;
+    height: 22px;
+    color: #777;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    position: relative;
+}
+
+.header-menu__sub-item:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.header-menu__sub-link:hover {
+    color: #fff;
+}
+
+.header .header-menu__sub-item--hotels:hover .header-menu__sub-link {
+    color: #fff;
+}
+
+
+/*--------서브 안에 서브 메뉴--------*/
+.header .header-menu__sub-item--hotels .header-menu__sub-link--main:after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: #af6e52;
+    transition: width .2s ease,left .2s ease;
+    content: "";
+}
+
+.header .header-menu__sub-item--hotels:hover .header-menu__sub-link--main:after {
+    width: 100%;
+    left: 0;
+}
+
+.header .header-menu__sub-item--hotels:hover {
+    height: 112px;
+}
+
+.header-menu__sub-depth {
+    float: left;
+    margin-top: -20px;
+    margin-left: 15px;
+}
+
+.header-menu__sub-depth-item {
+    float: left;
+    height: 62px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.header-menu__sub-depth-link {
+    height: 22px;
+    color: #777;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.header .header-menu__sub-item--hotels:hover .header-menu__sub-depth--hidden {
+    display: block;
+    float: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+.header-menu__sub-depth--hidden {
+    display: none;
+}
+
+.header .header-menu__sub-item--hotels:hover .header-menu__sub-depth-list {
+    padding-left: 285px;
+}
+
+.header-menu__sub-depth-item {
+    float: left;
+    height: 62px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.header .header-menu__sub-item--hotels:hover .header-menu__sub-depth-link {
+    color: #6c5246;
+}
+
+.header .header-menu__sub-item--hotels:hover .header-menu__sub-depth-link:hover {
+    color: #af6e52;
+}
+
+.header-menu__sub-depth-link {
+    height: 22px;
+    color: #777;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+.header-menu__sub-link--depth, .header-menu__sub-link--depth:hover {
+    color: #af6e52;
+}
+
+
+/*=============*/
+
+/*etc 아이콘*/
+
+.header-etc {
+    float: right;
+    text-align: center;
+    display: inline-block;
+}
+
+.header-etc__list {
+    display: flex;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+.header-etc__link {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    box-sizing: border-box;
+}
+
+.header-etc__text {
+    display: none;
+    position: relative;
+    margin: 0 -10px;
+    padding: 10px;
+    color: #111;
+    font-size: 12px;
+    letter-spacing: .04em;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.header-etc__item {
+    /*display: inline-block;*/
+    width: 50px;
+}
+
+.header-etc__item--book .header-etc__link {
+    background-image: url("/images/icon_etc_book.png");
+}
+
+.header-etc__item--login .header-etc__link {
+    background-image: url("/images/icon_etc_login.png");
+}
+
+.header-etc__item--language .header-etc__link {
+    background-image: url("/images/icon_etc_language.png");
+}

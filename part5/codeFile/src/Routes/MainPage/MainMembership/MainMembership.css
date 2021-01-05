@@ -1,0 +1,105 @@
+.main-membership {
+    text-align: center;
+    background: url("/images/bg_main_membership.jpg") no-repeat center 0;
+}
+
+.main-membership__title {
+    padding: 60px 0 50px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+.main-membership__container {
+    padding: 120px 0;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.main-membership__name {
+    color: #fff;
+    letter-spacing: .04em;
+}
+
+.main-membership__name-sub {
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.main-membership__name-main {
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.main-membership__card {
+    /*opacity: .1;*/
+    position: relative;
+    height: 228px;
+    margin-top: 80px;
+    transition: opacity .7s;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+.main-membership__figure {
+    /*position: absolute;*/
+    /*left: 50%;*/
+    max-width: 268px;
+    transition: margin-left 1.25s cubic-bezier(.5,.01,.2,1);
+    transition-delay: 1s;
+    margin-left: 40px;
+    display: inline-block;
+    position: relative;
+}
+
+.main-membership__image {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 2px 0 3px rgba(0,0,0,.2);
+}
+
+.main-membership__figure:before {
+    position: absolute;
+    bottom: -61px;
+    width: 268px;
+    height: 61px;
+    background: url("/images/bg_main_card_shadow.jpg") no-repeat 0 0;
+    content: "";
+}
+
+.main-membership__figure:nth-child(0) {
+    margin: 0;
+}
+
+.main-membership__figure {
+    /*margin-left: 174px;*/
+}
+
+.main-membership__text {
+    opacity: .8;
+    color: #111;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.main-membership__button {
+    display: inline-block;
+    padding-top: 40px;
+}
